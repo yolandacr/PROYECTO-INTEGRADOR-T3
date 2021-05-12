@@ -14,6 +14,8 @@ fecha: febrero 2021
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/Rutas.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="JavaScript\validacion.js"></script>
 
 </head>
 
@@ -25,14 +27,19 @@ fecha: febrero 2021
 
     <header class="Encabezado">
         <div id="izq">
-            <!-- bloque superior izquierdo -->
-            <form name="miFormulario" onSubmit="return guardaUsr()">
-                <label for="usuario">Usuario:</label><br>
-                <input id="input" type="text" name="usuario" maxlength="10" required><br>
-                <input id="input" type="submit" value="Acceder">
-            </form>
-
-        </div>
+				<!-- bloque superior izquierdo -->
+				<form id="login" name="miFormulario" onsubmit="return validarXML()">
+					<label for="usuario">Usuario:</label><br>
+					<input id="input" type="text" name="usuario" maxlength="10" required><br>
+					<label for="usuario">Constraseña:</label><br>
+					<input id="input" type="password" name="pass" maxlength="16" required><br>
+					<input id="input" type="submit" value="Acceder">
+				</form>
+				<div id="mensajeLogin">
+					<p onclick="borraUsr()">Bienvenid@ <span id="aqui"></span></p>
+					<input  type="button" value="Salir">
+				</div>
+			</div>
 
         <!-- bloque superior central -->
         <div class="ParrafoCentrado" id="cent">
@@ -307,7 +314,6 @@ fecha: febrero 2021
     </main>
 
 
-    <script src="..\JavaScript\index.js"></script>
 
 
 
