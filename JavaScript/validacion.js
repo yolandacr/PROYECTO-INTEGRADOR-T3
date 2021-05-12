@@ -7,7 +7,7 @@ function validarXML() {
 			miFuncion(this);
 		}
 	};
-	xhr.open("GET", "https://yolandacr.github.io/PROYECTO-INTEGRADOR-T3/registrados.xml", true);
+	xhr.open("GET", "https://yolandacr.github.io/proyecto-integrador-t3//registrados.xml", true);
 	xhr.send();
 }
 
