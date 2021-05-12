@@ -63,6 +63,10 @@ body {
     margin-right:50px;
 }
 
+#mensajeLogin {
+    display: none;
+}
+
 #input{
     font-size:1vw;
     height:50%;
