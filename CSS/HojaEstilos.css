@@ -1,0 +1,250 @@
+﻿/*Características de todo el cuerpo*/
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*Cuerpo de la web*/
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    overflow-y: auto;
+    overflow-x:hidden;
+    background-image: url(../img/fondo_web.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    height:100vh;
+}
+
+
+/*COMIENZO ENCABEZADO*/
+
+.Encabezado {
+    width:100%;
+    display:flex;
+    box-sizing:border-box;
+    background-color: rgba(255, 255, 255, .4);
+    height: auto;
+    border: 1px hidden #526079;
+    border-radius: 20px;
+    font-size:1vw;
+}
+
+#imagen {
+    width:80%;
+    height:auto;
+    box-sizing:border-box;
+    margin-top:4%;
+}
+
+#cent{
+    width:50%;;
+    padding:3%;
+    color:#223E72;
+}
+
+#der {
+    width: 25%;
+}
+#subtitulo {
+    color:antiquewhite;
+    border-bottom:3px solid cadetblue;
+    border-top: 3px solid cadetblue;
+    border-color: cadetblue;
+    background-color: transparent;
+    margin-top: 40px;
+    font-size:1vw;
+}
+
+#izq {
+    padding:2%;
+    width: 25%;
+    margin-right:50px;
+}
+
+#mensajeLogin {
+    display:none;
+}
+
+#input{
+    font-size:1vw;
+    height:50%;
+    padding:2%;
+}
+
+/*FIN ENCABEZADO*/
+
+.ParrafoCentrado {
+    text-align: center;
+}
+
+/*NAV*/
+
+nav {
+    overflow: hidden;
+    height: auto;
+    font-size: 1vw;
+}
+
+    nav a {
+        text-decoration: none;
+        color: inherit;
+        font-size: 1vw;
+    }
+
+    nav li {
+        display: inline-block;
+        width: 8%;
+        padding: 5px 10px;
+        background-color: cornflowerblue;
+        border: 1px solid #000;
+        text-align: center;
+        color: #fff;
+        font-size: 1vw;
+        
+    }
+
+        nav li:hover {
+            background-color: #fff;
+            color: #000;
+            font-size: 1vw;
+            
+        }
+
+    /*Menu desplegable*/
+.menuDesplegable-contenido {
+    display: none;
+    position: absolute;
+    background-color: cornflowerblue;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+ .menuDesplegable-contenido a {
+        float: none;
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+.menuDesplegable-contenido a:hover {
+            background-color:cadetblue;
+        }
+
+.menuDesplegable:hover .menuDesplegable-contenido {
+    display: block;
+}
+
+.navbar a:active, .menuDesplegable-contenido a:active {
+    color: black;
+    position: relative;
+    font-size: 1vw;
+    top: 3px;
+    left: 3px;
+}
+
+    /*ASIDE*/
+#formulario {
+    width: 20vw;
+    height: auto;
+    float: right;
+    font-size:1vw;
+    background-color: rgba(255, 255, 255, .4);
+    border: 1px hidden #526079;
+    border-radius: 10px;
+    Padding:1%;
+}
+
+#tituloFormulario {
+    font-size: 1vw;
+    font-weight:bold;
+    text-decoration: underline;
+}
+
+
+
+    /*BLOQUE PRINCIPAL*/
+
+.introduccion {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2vw;
+    background-color: rgba(255, 255, 255, .4);
+    border: 1px hidden #526079;
+    border-radius: 20px;
+    margin: 3%;
+    padding: 1%;
+    width: 70%;
+    text-align: left;
+    display: inline-block;
+    object-fit:cover;
+}
+
+#fotoPortada {
+    border: 1px hidden #526079;
+    border-radius: 20px;
+    width: 30%;
+    float: right;
+    height: auto;
+    margin-left: 1%;
+}
+
+
+
+#parrafoIntro{
+    text-align:left;
+}
+
+
+.Section {
+    display: flex;
+    width: 70%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(255, 255, 255, .4);
+    border: 1px hidden #526079;
+    border-radius: 20px;
+    padding: 1%;
+    margin-left: 3%;
+    height:45vh;
+    overflow:auto;
+}
+
+    #imagenArticulo {
+        border: 1px hidden #526079;
+        border-radius: 20px;
+        width: 60%;
+        float: left;
+        height: auto;
+        margin-right: 10px;
+    }
+
+#parrafoTitulo {
+    font-size: 1.2vw;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: underline;
+    margin-top: 0px;
+}
+
+#art1 {
+    text-align: left;
+    font-size:1vw;
+    width: 40%;
+    height:50vh;
+}
+
+#art2 {
+    text-align: left;
+    width: 40%;
+    font-size: 1vw;
+    margin-left: 10%;
+    height:50vh;
+}
+
+    /*FOOTER*/
+#footer {
+    font-size: 1vw;
+    color: #223E72;
+}
