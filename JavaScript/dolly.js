@@ -1,5 +1,5 @@
 ﻿function abrirPdf() {
-	window.open('../docs/muestra.pdf');
+	window.open('../docs/explicacion.pdf');
 }
 
 function atras() {
