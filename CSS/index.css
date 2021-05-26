@@ -1,23 +1,7 @@
-﻿/*Características de todo el cuerpo*/
-{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-/*Cuerpo de la web*/
-
-body {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    overflow-y: auto;
-    overflow-x:hidden;
-    background-image: url(../img/fondo_web.jpg);
-    background-size:cover;
-    background-repeat:no-repeat;
-    height:100vh;
-}
-
-
-.ParrafoCentrado {
+﻿.ParrafoCentrado {
     text-align: center;
+}
+
+#menu{
+    font-size:2vw;
 }
