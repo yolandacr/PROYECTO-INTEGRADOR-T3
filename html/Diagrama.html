@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<!--
+Sistema: Proyecto Integrador Web
+autor: Yolanda Cordero
+fecha: febrero 2021
+-->
+
+<head>
+    <title>Información Turística de la Ciudad de Málaga</title>
+    <meta name="description" content="Información de monumentos, museos, eventos y todo
+	lo necesario para hacer de su estancia en Málaga una experiencia única." />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/diagrama.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="..\JavaScript\validacion.js"></script>
+    <script src="..\JavaScript\dolly.js"></script>
+
+
+</head>
+
+
+
+<body onload="cargarUser()">
+
+
+    <!--ENCABEZADO-->
+
+    <header>
+        
+        <div id="cent">
+            <!-- bloque superior izquierdo -->
+            <form id="login" name="miFormulario" onsubmit="return validarXML()">
+                <label for="usuario">Usuario:</label><br>
+                <input id="input" type="text" name="usuario" maxlength="10" required><br>
+                <label for="usuario">Constraseña:</label><br>
+                <input id="input" type="password" name="pass" maxlength="16" required><br>
+                <input id="input" type="submit" value="Acceder">
+            </form>
+            <div id="mensajeLogin">
+                <p>Bienvenid@ <span id="aqui"></span></p>
+                <input id="boton" type="button" value="Salir" onclick="borraUsr()">
+            </div>
+
+          
+        </div>
+
+
+    </header>
+
+
+
+    <!--CUERPO PRINCIPAL-->
+
+
+    <main>
+
+        <div class="ParrafoCentrado" id="diagrama"><img src="../img/estados.jpg" alt="diagrama" /></div>
+
+        <div id="divBotones">
+            <input class="ParrafoCentrado" id="boton" type="button" onclick="atras()" name="Volver Atrás" value="Volver Atrás">
+        </div>
+
+
+    </main>
+
+
+</body>
+</html>

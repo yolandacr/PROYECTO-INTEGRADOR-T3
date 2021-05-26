@@ -1,0 +1,70 @@
+﻿/*Características de todo el cuerpo*/
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*Cuerpo de la web*/
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    overflow-y: auto;
+    overflow-x:hidden;
+    background-image: url(../img/fondo_web.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    height:100vh;
+    
+}
+
+
+#cent {
+    width: 50%;
+    font-size: 0.8vw;
+    color: white;
+    margin-bottom: 0.5%;
+    margin-top: 0.5%;
+}
+
+.ParrafoCentrado {
+    text-align: center;
+}
+
+#mensajeLogin {
+    display: none;
+}
+
+#input {
+    font-size: 1vw;
+    color:black;
+    height: 50%;
+    margin-top:1%;
+}
+
+#boton {
+    font-size: 1vw;
+    height: 15%;
+    padding: 2%;
+}
+
+#divBotones {
+    float:right;
+    width: 25%;
+    margin-top: 2%;
+    height: 4%;
+}
+
+#diagrama{
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:5%;
+    height:auto;
+    width:60%;
+}
+
+
+
+
+
+
