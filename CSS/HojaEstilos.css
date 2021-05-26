@@ -248,3 +248,23 @@ nav {
     font-size: 1vw;
     color: #223E72;
 }
+
+
+
+:root {
+    /* colores de fuente */
+    --colorDia: black;
+    --colorNoche: blue;
+    
+    --color: var(--colorNoche);
+    --modo: "noche";
+}
+
+
+
+*{
+	color: var(--color);
+}
+
+
+
