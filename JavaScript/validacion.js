@@ -59,3 +59,7 @@ function borraUsr() {
 
 }
 
+function abrirPdf() {
+	window.open('../docs/creditos.pdf');
+}
+

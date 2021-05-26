@@ -14,7 +14,7 @@ body {
     background-image: url(../img/fondo_web.jpg);
     background-size:cover;
     background-repeat:no-repeat;
-    height:100vh;
+    height:100rem;
 }
 
 
@@ -48,13 +48,13 @@ body {
     width: 25%;
 }
 #subtitulo {
-    color:antiquewhite;
-    border-bottom:3px solid cadetblue;
+    color: antiquewhite;
+    border-bottom: 3px solid cadetblue;
     border-top: 3px solid cadetblue;
     border-color: cadetblue;
     background-color: transparent;
-    margin-top: 40px;
-    font-size:1vw;
+    margin-top: 5%;
+    font-size: 1vw;
 }
 
 #izq {
@@ -82,6 +82,7 @@ body {
 /*NAV*/
 
 nav {
+    margin-top: 5%;
     overflow: hidden;
     height: auto;
     font-size: 1vw;
@@ -149,14 +150,15 @@ nav {
 
     /*ASIDE*/
 #formulario {
+    margin-top: 5%;
     width: 20vw;
     height: auto;
     float: right;
-    font-size:1vw;
+    font-size: 1vw;
     background-color: rgba(255, 255, 255, .4);
     border: 1px hidden #526079;
     border-radius: 10px;
-    Padding:1%;
+    Padding: 1%;
 }
 
 #tituloFormulario {
@@ -180,7 +182,8 @@ nav {
     width: 70%;
     text-align: left;
     display: inline-block;
-    object-fit:cover;
+    object-fit: cover;
+    
 }
 
 #foto {
@@ -206,23 +209,33 @@ nav {
 }
 
 .Section {
+    margin-top: 5%;
     display: flex;
     width: 70%;
-    font-size:1vw;
+    font-size: 1vw;
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgba(255, 255, 255, .4);
     border: 1px hidden #526079;
     border-radius: 20px;
     padding: 1%;
     margin-left: 3%;
-    height:49vh;
-    overflow:auto;
+    height: 90vh;
+    overflow: auto;
 }
 
 
 
-    /*FOOTER*/
 #footer {
     font-size: 1vw;
     color: #223E72;
+    margin-top: 13%;
+}
+
+
+#divBotones {
+    margin: 2%;
+}
+
+#boton {
+    font-size: 1vw;
 }
