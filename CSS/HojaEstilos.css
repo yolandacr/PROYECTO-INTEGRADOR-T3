@@ -53,7 +53,7 @@ body {
     border-top: 3px solid cadetblue;
     border-color: cadetblue;
     background-color: transparent;
-    margin-top: 5%;
+    margin-top: 5.3%;
     font-size:1vw;
 
 }
@@ -260,8 +260,7 @@ nav {
 :root {
     /* colores de fuente */
     --colorDia: black;
-    --colorNoche: blue;
-    
+    --colorNoche: #223E72;
     --color: var(--colorNoche);
     --modo: "noche";
 }

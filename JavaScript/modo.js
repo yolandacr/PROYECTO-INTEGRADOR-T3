@@ -12,21 +12,18 @@
 		
 		if (modoActual=="noche") {
 			$(':root').css("--color", $(':root').css('--colorDia'));
-			$(':root').css("--colorBg", $(':root').css('--colorBgDia'));
 			$(':root').css("--modo", "dia");
 			modoActual = "Negro";
 			modoFuturo = "Azul";
 		}
 		else {
 			$(':root').css("--color", $(':root').css('--colorNoche'));
-			$(':root').css("--colorBg", $(':root').css('--colorBgNoche'));
 			$(':root').css("--modo", "noche");
 			modoActual = "Azul";
 			modoFuturo = "Negro";
 		}
 
 		$(':root').css("color",$(':root').css('--color'));
-		$(':root').css("background-color",$(':root').css('--colorBg'));
 		$('#modo').text(modoActual);
 		$('#mensajeBoton').text('Cambiar a '+modoFuturo);
 
@@ -37,13 +34,11 @@
 		// hago los cambios y lo registro en la variable modo
 		if ($(':root').css('--modo')=="noche") {
 			$(':root').css("--color", $(':root').css('--colorDia'));
-			$(':root').css("--colorBg", $(':root').css('--colorBgDia'));
 			$(':root').css("--modo", "dia");
 			$('#mensajeBoton').text('Cambiar a Azul');
 		}
 		else {
 			$(':root').css("--color", $(':root').css('--colorNoche'));
-			$(':root').css("--colorBg", $(':root').css('--colorBgNoche'));
 			$(':root').css("--modo", "noche");
 			$('#mensajeBoton').text('Cambiar a Negro');		
 		}
