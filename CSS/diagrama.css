@@ -46,22 +46,22 @@ body {
 #boton {
     font-size: 1vw;
     height: 15%;
-    padding: 2%;
 }
 
 #divBotones {
-    float:right;
-    width: 25%;
-    margin-top: 2%;
-    height: 4%;
+    width: 100%;
+    margin:2%;
+    height: 25vw;
 }
 
-#diagrama{
-    margin-left:auto;
-    margin-right:auto;
-    margin-top:5%;
-    height:auto;
-    width:60%;
+#diagrama {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    height: auto;
+    width: 60%;
+    object-fit: cover;
+    
 }
 
 
