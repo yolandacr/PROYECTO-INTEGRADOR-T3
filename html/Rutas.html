@@ -1,0 +1,322 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<!--
+Sistema: Proyecto Integrador Web
+autor: Yolanda Cordero
+fecha: febrero 2021
+-->
+
+<head>
+    <title>Información Turística de la Ciudad de Málaga</title>
+    <meta name="description" content="Información de monumentos, museos, eventos y todo
+	lo necesario para hacer de su estancia en Málaga una experiencia única." />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/Rutas.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="..\JavaScript\rutas.js"></script>
+
+</head>
+
+
+
+<body onload="cargarUser()">
+
+
+    <!--ENCABEZADO-->
+
+    <header class="Encabezado">
+        <div id="izq">
+            <!-- bloque superior izquierdo -->
+            <form id="login" name="miFormulario" onsubmit="return validarXML()">
+                <label for="usuario">Usuario:</label><br>
+                <input id="input" type="text" name="usuario" maxlength="10" required><br>
+                <label for="usuario">Constraseña:</label><br>
+                <input id="input" type="password" name="pass" maxlength="16" required><br>
+                <input id="input" type="submit" value="Acceder">
+            </form>
+            <div id="mensajeLogin">
+                <p>Bienvenid@ <span id="aqui"></span></p>
+                <input id="input" type="button" value="Salir" onclick="borraUsr()">
+            </div>
+        </div>
+
+        <!-- bloque superior central -->
+        <div class="ParrafoCentrado" id="cent">
+            <h1>Oficina de Información Túristica Virtual</h1>
+        </div>
+
+
+        <div id="der">
+            <!-- bloque superior derecho -->
+            <img id="imagen" src="../img/malaga_logo.png"
+                 alt="Logo Málaga Turismo" />
+        </div>
+    </header>
+
+
+    <!--SUBTITULO Y BARRA DE NAVEGACION-->
+
+    <div class="ParrafoCentrado" id="subtitulo"><h2>Información turística de Málaga</h2></div>
+
+    <nav class="BarraNavegacion">
+        <ul>
+            <li class="menuDesplegable">
+
+                <a href="../index.html" target="_self">Inicio</a>
+
+
+            </li>
+
+            <li class="menuDesplegable">
+                <a>
+                    Museos
+                </a>
+                <div class="menuDesplegable-contenido">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </li>
+
+            <li class="menuDesplegable">
+                <a>
+                    Monumentos
+                </a>
+                <div class="menuDesplegable-contenido">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </li>
+
+            <li class="menuDesplegable">
+                <a>
+                    Transporte
+                </a>
+                <div class="menuDesplegable-contenido">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </li>
+
+            <li class="menuDesplegable">
+                <a>
+                    Gastronomía
+                </a>
+                <div class="menuDesplegable-contenido">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </li>
+
+            <li class="menuDesplegable">
+                <a>
+                    Picasso
+                </a>
+                <div class="menuDesplegable-contenido">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </li>
+
+            <li class="menuDesplegable">
+                <a href="Diagrama.html" target="_self">Diagrama</a>
+
+
+            </li>
+
+            <li class="menuDesplegable">
+                <a href="Dolly.html" target="_self">Efecto Dolly</a>
+            </li>
+
+            <li class="menuDesplegable">
+                <a>
+                    Rutas
+                </a>
+                <div class="menuDesplegable-contenido">
+                    <a href="#">Málaga en 2 días</a>
+                    <a href="#">Málaga en 3 días</a>
+                </div>
+            </li>
+
+        </ul>
+    </nav>
+
+
+    <!--CUERPO PRINCIPAL-->
+
+
+    <main class=" Main">
+
+
+        <!-- aqui podemos tambien usar section y article -->
+
+
+
+
+        <br />
+
+        <!--BARRA LATERAL-->
+        <aside>
+            <div id="formulario">
+                <form action="ejemplo.php" method="get">
+                    <label id="tituloFormulario" for="titulo">Contáctenos:</label>
+                    <p>Nombre: <input id="input" type="text" name="nombre" size="25"></p>
+                    <p>Email: <br /><input id="input" type="text" name="email" size="25"></p>
+                    <p>Su consulta:<br /><textarea id="input" type="text" name="email" size="300"></textarea></p>
+                    <p>
+                        <input id="input" type="submit" value="Enviar">
+                        <input id="input" type="reset" value="Borrar">
+                    </p>
+                </form>
+            </div>
+        </aside>
+
+        <section class="Section">
+            <article id="Introduccion">
+                <div>
+                    <img id="foto" src="../img/calle_larios.jpg"
+                         alt="Calle Larios" />
+                    <p>
+                        Tomemos como punto de partida la emblemática calle Larios, importante arteria comercial de Málaga,
+                        donde se ubican comercios de grandes firmas, hasta llegar a la plaza de la Constitución: el corazón
+                        del centro histórico de la ciudad.
+                        De allí nos dirigiremos hacia el oeste, por la calle Compañía hasta llegar al Palacio de Villalón (Siglo XVI),
+                        sede del Museo Carmen Thyssen Málaga, primera meta de nuestro recorrido. Este museo, inaugurado en marzo de 2011,
+                        expone una colección permanente de más de 200 obras de artistas españoles del siglo XIX, especialmente centrado
+                        en la pintura andaluza.<br /><br />
+                        De vuelta a la plaza de la Constitución, podemos aprovechar para retomar fuerzas,
+                        degustando un buen desayuno malagueño en cualquiera de las cafeterías que se encuentran en la zona.
+                        Un buen café con churros o un pitufo, nos sentarán de maravilla. Nos dirigiremos esta vez hacia el este,
+                        y tomaremos la calle Santa María que nos lleva directamente a la Catedral y a su Museo Catedralicio.
+                        Aunque las obras de la Catedral se iniciaron durante el período gótico (siglo XVI) sobre la antigua mezquita
+                        de la ciudad árabe, el edificio actual es de estilo renacentista y aún está inconcluso.
+                        La falta de la torre
+                        sur le ha valido el apelativo popular de “La Manquita”. Frente a la Catedral, la plaza del Obispo y
+                        el Palacio Episcopal (1762), bellísimo ejemplo de la arquitectura barroca malagueña.
+                        Por la calle Císter, a la espalda de la Catedral, desembocamos en la calle Alcazabilla donde se encuentra
+                        nuestra siguiente meta: La Alcazaba, que junto con el Castillo de Gibralfaro,
+                        es uno de los monumentos más importantes de la ciudad.
+                        La Alcazaba, construida entre los siglos XI y XIV, fue el palacio fortaleza de los gobernantes musulmanes.
+                        Está emplazada sobre los restos de una anterior fortaleza fenicia a las faldas del monte de Gibralfaro,
+                        en un enclave privilegiado sobre la ciudad.
+
+                    </p>
+                </div>
+
+
+
+                <div>
+                    <img id="fotoizq" src="../img/plaza_constitucion.jpg"
+                         alt="Plaza de la Constituación" />
+                    <p>
+                        La Alcazaba se comunica con el Castillo de Gibralfaro por un empinado pasillo de monte.
+                        La forma más fácil de acceder a esta fortaleza es mediante transporte público, el autobús línea 35,
+                        desde el paseo del Parque.
+                        Nuestro siguiente objetivo es el Teatro Romano, situado en la calle Alcazabilla, a los pies de la Alcazaba.
+                        Construido en el siglo I a.C., se mantuvo activo hasta el siglo III d.C.
+                        <br /><br />Tras su restauración,
+                        el Teatro Romano de Málaga ha recuperado recientemente su uso como espacio escénico.
+                        Y ya es hora de hacer un alto para degustar la variada y riquísima gastronomía local y de todo el mundo
+                        en cualquiera de los innumerables establecimientos que encontraremos en el centro histórico de Málaga.
+                        Pescaíto frito, gazpacho, ensalada malagueña… Y todo ello regado con los deliciosos vinos de la tierra.
+                        Retomamos nuestra ruta y seguimos la calle Alcazabilla hacia el norte,
+                        para llegar a la plaza de la Merced por donde entramos de lleno en la ruta picassiana de Málaga.<br /><br />
+                        Objetivo: Fundación Picasso. Museo Casa Natal, donde se exhiben obras originales de Pablo Ruiz Picasso
+                        de su colección permanente y de cesiones temporales. Cerámicas, grabados y libros ilustrados.
+                        Después podemos hacer un alto para merendar o tomar un refresco en cualquiera de los bares y cafeterías
+                        que circundan la plaza.
+                        Desde la plaza de la Merced, enfilaremos la calle Granada a cuya entrada se encuentra la iglesia de Santiago,
+                        donde Picasso fue bautizado. De estilo gótico mudéjar, se comenzó a construir en 1487 y es la sede
+                        de algunas de las más importantes cofradías que procesionan en la Semana Santa de Málaga.<br /><br />
+                    </p>
+                </div>
+
+                <div>
+                    <img id="foto" src="../img/picasso.jpg"
+                         alt="Plaza de la Constituación" />
+                    <p>
+                        A unos 200 metros y a la izquierda, llegamos a la estrecha calle de San Agustín, donde se encuentra
+                        el Palacio de Buenavista sede del Museo Picasso Málaga.
+                        Inaugurado en 2003, este museo expone 233 obras del artista malagueño entre pinturas, dibujos, esculturas,
+                        grabados y cerámicas que forman parte de la colección permanente, junto a interesantes exposiciones temporales.
+                        Volvemos al punto de partida, la plaza de la Constitución, y bajamos otra vez por calle Larios,
+                        que encontraremos plena de actividad comercial. Una actividad que, en realidad, habremos observado
+                        durante todo el trayecto, y que hemos aprovechado para hacer algunas compras en cualquiera de
+                        sus excelentes comercios.<br /><br />
+                        Llegando a la plaza de la Marina iremos hacia el oeste por el lateral izquierdo del paseo del Parque.
+                        Construido a finales del siglo XIX sobre una franja de terreno ganado al mar, este paseo conecta el
+                        casco histórico con la zona este de la ciudad y el paseo marítimo. En él se encuentran construcciones
+                        tan emblemáticas como el Palacio de la Aduana, sede del Museo de Málaga, que recoge las colecciones
+                        provinciales de Arqueología y Bellas Artes.
+                        En este magnífico museo podemos encontrar más de 15.000 piezas arqueológicas y más de 2.000 títulos
+                        de Bellas Artes, entre ellos una de las mejores colecciones de pintura española del siglo XIX.
+                        También se encuentran en el Parque el antiguo edificio de Correos, de estilo neomudéjar (1923),
+                        actual sede del Rectorado de la Universidad de Málaga; el Banco de España, de estilo neoclásico (1933-36);
+                        y el Ayuntamiento, de estilo neobarroco (1911-19).
+                        Cruzaremos el paseo del Parque y entraremos en el Paseo de la Farola, que desemboca en nuestro siguiente objetivo:
+                        La Farola (1817), símbolo por excelencia de la ciudad de Málaga.<br /><br />
+                        Desde la Farola disfrutaremos de unas impresionantes vistas del Puerto de Málaga y de la ciudad,
+                        a cuyo centro histórico volveremos atravesando el Muelle Uno, donde se encuentra el Centre Pompidou Málaga,
+                        que ofrece un recorrido permanente de varias decenas de obras de arte de los siglos XX y XXI
+                        de la imponente colección del Centre Pompidou de París. El Muelle Uno alberga también una importante
+                        zona comercial y de ocio, donde podemos aprovechar para realizar algunas compras en los exclusivos
+                        establecimientos allí instalados y reponer fuerzas en cualquiera de sus bares y restaurantes junto al mar.
+                        Continuaremos nuestro agradable paseo por el Muelle 2, prolongación del Muelle 1, convertido
+                        en Bulevar y denominado El Palmeral de las Sorpresas. Este camino nos devolverá a nuestro punto de
+                        partida ya cargados de vivencias únicas y con una idea fija:
+                        tenemos que volver.
+                    </p>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </article>
+
+
+
+
+        </section>
+
+
+
+
+
+    </main>
+
+
+
+
+
+
+    <!--FOOTER/PIE DE PAGINA-->
+    <footer>
+        <p class="ParrafoCentrado" id="footer">
+            Yolanda Cordero Robledo<br /><br />
+            Créditos:<br />
+            <div class="ParrafoCentrado" id="divBotones">
+                <input id="boton" type="button" onclick="abrirPdf()" name="Abrir PDF" value="Abrir PDF">
+            </div>
+        </p>
+    </footer>
+
+</body>
+</html>
